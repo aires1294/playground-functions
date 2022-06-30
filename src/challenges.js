@@ -1,13 +1,16 @@
-// Desafio 1 CONFERIRRRRRRRRR
+// Desafio 1 FEITOOOOOOOOO
   function compareTrue(a, b) {
+    let x = 'true'
+    let y = 'false'
     if (a === true && b === true){
-      return compareTrue;
-    
+      return x;
     } else {
-      return compareTrue;
-         }
-    
+      return y;
+    }
+   
   }
+  console.log(compareTrue(girafa = true, elefante = false));
+
 
 // Desafio 2 FEITOOOOOOO
 function calcArea(base, height) {
@@ -44,7 +47,7 @@ function footballPoints(wins, ties) {
   somaPontos = (wins * 3) + ties;
   return somaPontos;
 }
-console.log(footballPoints(5, 2));
+console.log(footballPoints(14, 8));
 
 // Desafio 6
 function highestCount(arrayNumeros) {

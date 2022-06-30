@@ -22,17 +22,17 @@ function calcArea(base, height) {
 console.log(calcArea(10, 5));
 console.log(calcArea(50, 5));
 
-// Desafio 3 tem um push esquisito QUASE CER|TO
+// Desafio 3 FEITOOOOOOOOOOO
 function splitSentence(sentence) {
     let arrayNovo = [];
-    arrayNovo.push = sentence.split(" ");
+    arrayNovo = sentence.split(" ");
     return arrayNovo;
     
 }
 console.log(splitSentence('go Trybe'));
 
 
-// Desafio 4 NEM IDEIA 
+// Desafio 4  
 function concatName(array) {
   let arrayNovo = [];
   for (index = 0; index < array.length; index+=1){

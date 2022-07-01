@@ -9,7 +9,7 @@
     }
    
   }
-  console.log(compareTrue(girafa = true, elefante = false));
+  /*console.log(compareTrue(girafa = true, elefante = false));*/
 
 
 // Desafio 2 FEITOOOOOOO
@@ -19,8 +19,8 @@ function calcArea(base, height) {
   
 }
 
-console.log(calcArea(10, 5));
-console.log(calcArea(50, 5));
+/*console.log(calcArea(10, 5));
+console.log(calcArea(50, 5));*/
 
 // Desafio 3 FEITOOOOOOOOOOO
 function splitSentence(sentence) {
@@ -29,7 +29,7 @@ function splitSentence(sentence) {
     return arrayNovo;
     
 }
-console.log(splitSentence('go Trybe'));
+/*console.log(splitSentence('go Trybe'));*/
 
 
 // Desafio 4  
@@ -47,7 +47,7 @@ function footballPoints(wins, ties) {
   somaPontos = (wins * 3) + ties;
   return somaPontos;
 }
-console.log(footballPoints(14, 8));
+/*console.log(footballPoints(14, 8));*/
 
 // Desafio 6 FEITOOOOOOOO
 function highestCount(arrayNumeros) {
@@ -63,11 +63,11 @@ function highestCount(arrayNumeros) {
   } 
   
   }
-  console.log(contador);
+  /*console.log(contador);*/
   return contador;
   
 }
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+/*console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));*/
 
 
 

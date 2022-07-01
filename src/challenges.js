@@ -31,7 +31,7 @@ function splitSentence(sentence) {
 
 function concatName(array) {
   let arrayNovo = [];
-  arrayNovo = array[array.length -1] + ' '+array[0];
+  arrayNovo = array[array.length -1] + ', '+array[0];
 
   return arrayNovo;
 }
@@ -49,26 +49,26 @@ function footballPoints(wins, ties) {
 function highestCount(arrayNumeros) {
   var contador = 0;
   arrayNumeros.sort();
-  console.log(arrayNumeros);
+  /*console.log(arrayNumeros);*/
 
   for (index = 0; index < arrayNumeros.length; index += 1) {
-      if (arrayNumeros[index] === arrayNumeros[0]  && arrayNumeros[arrayNumeros.length -1] < 0){
-          console.log('oi '+arrayNumeros[0]);
+      if (arrayNumeros[index] === arrayNumeros[0]  && arrayNumeros[arrayNumeros.length -1] <= 0){
+         /* console.log('oi '+arrayNumeros[0]);*/
           contador = contador + 1;
           
 
-      } else if (arrayNumeros[index] === arrayNumeros[arrayNumeros.length - 1 && arrayNumeros[arrayNumeros.length -1] > 0]) {
-          console.log('ola '+arrayNumeros[arrayNumeros.length -1]);
+      } else if (arrayNumeros[index] === arrayNumeros[arrayNumeros.length - 1] && arrayNumeros[arrayNumeros.length -1] > 0) {
+          /*console.log('ola '+arrayNumeros[arrayNumeros.length -1]);*/
       contador = contador + 1;
     }
   }
   
   return contador;
 }
-console.log(highestCount([0, 0, 0]));
+/*console.log(highestCount([0, 0, 0]));
 console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 console.log(highestCount([-2, -2, -1]));
-console.log(highestCount([-1, -2, -1, -8, -8, -8]));
+console.log(highestCount([-1, -2, -1, -8, -8, -8]));*/
 
 // Desafio 7 FEITOOOOO
 function catAndMouse(mouse, cat1, cat2) {
@@ -78,7 +78,7 @@ function catAndMouse(mouse, cat1, cat2) {
       return 'cat1';
 
   } else {
-      return 'Os gatos trombam e o rato foge';
+      return 'os gatos trombam e o rato foge';
   }
 }
  /* console.log(catAndMouse(25, 20, 30)); */

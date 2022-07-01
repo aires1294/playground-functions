@@ -1,7 +1,7 @@
 // Desafio 1 FEITOOOOOOOOO
 function compareTrue(a, b) {
-  let x = 'true';
-  let y = 'false';
+  let x = true;
+  let y = false;
   if (a === true && b === true) {
     return x;
   } else {
@@ -45,27 +45,37 @@ function footballPoints(wins, ties) {
 }
 /*console.log(footballPoints(14, 8));*/
 
-// Desafio 6 FEITOOOOOOOO
+// Desafio 6 RESOLVIDO 
 function highestCount(arrayNumeros) {
   var contador = 0;
   arrayNumeros.sort();
+  console.log(arrayNumeros);
 
   for (index = 0; index < arrayNumeros.length; index += 1) {
-    if (arrayNumeros[index] === arrayNumeros[arrayNumeros.length - 1]) {
+      if (arrayNumeros[index] === arrayNumeros[0]  && arrayNumeros[arrayNumeros.length -1] < 0){
+          console.log('oi '+arrayNumeros[0]);
+          contador = contador + 1;
+          
+
+      } else if (arrayNumeros[index] === arrayNumeros[arrayNumeros.length - 1 && arrayNumeros[arrayNumeros.length -1] > 0]) {
+          console.log('ola '+arrayNumeros[arrayNumeros.length -1]);
       contador = contador + 1;
     }
   }
-  /*console.log(contador);*/
+  
   return contador;
 }
-/*console.log(highestCount([9, 1, 2, 3, 9, 5, 7, 9]));*/
+console.log(highestCount([0, 0, 0]));
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+console.log(highestCount([-2, -2, -1]));
+console.log(highestCount([-1, -2, -1, -8, -8, -8]));
 
 // Desafio 7 FEITOOOOO
 function catAndMouse(mouse, cat1, cat2) {
   if (Math.abs(mouse - cat1) > Math.abs(mouse - cat2) ){
-      return 'cat1';
-  } if (Math.abs(mouse - cat2) > Math.abs(mouse - cat1) ){
       return 'cat2';
+  } if (Math.abs(mouse - cat2) > Math.abs(mouse - cat1) ){
+      return 'cat1';
 
   } else {
       return 'Os gatos trombam e o rato foge';

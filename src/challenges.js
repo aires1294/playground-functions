@@ -110,7 +110,7 @@ return novoArray;
 }
 /*console.log(fizzBuzz([2, 15, 7, 9, 45]));*/
 
-// Desafio 9
+// Desafio 9 FEITOOOOOOO
 function encode(senha) {
   var array = senha.split('');
   
@@ -162,9 +162,18 @@ function decode(senhaDecode) {
 console.log(decode("H4w 1r2 y45 t4d1y?"));
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(arrayTech, nomes) {
+  let novoArray = [];
+  arrayTech.sort();
+  for (let i of arrayTech) {
+    novoArray.push({ tech: i, name: nomes });
+  }
+  if (arrayTech.length === 0) {
+    return 'Vazio!';
+  }
+  return novoArray;
 }
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 module.exports = {
   calcArea,

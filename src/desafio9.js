@@ -1,30 +1,9 @@
-// Desafio 10
-function techList(arrayTech, arrayPessoa) {
-    let result = {};
-    for (index = 0; index < arrayTech.length; index +=1){
-        result[arrayTech[index]] = arrayPessoa;
-        }
-    return result;
-   
-  }
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
-
-
-
-
-
-
-
-// Desafio 10
-function techList(arrayTech, nome) {
-    let novoArray = [];
-    arrayTech.sort();
-    for (let i of arrayTech) {
-      novoArray.push({ tech: i, name: nome });
+// Desafio 12
+function triangleCheck(lineA, lineB, lineC) {
+    if (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB && lineA > Math.abs(lineB) - Math.abs(lineC) && lineB > Math.abs(lineA) - Math.abs(lineC) && lineC > Math.abs(lineB) - Math.abs(lineA)){
+        return 'true';
+    } else {
+        return 'false';
     }
-    if (arrayTech.length === 0) {
-      return 'Vazio!';
-    }
-    return novoArray;
   }
-  console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+  console.log(triangleCheck(10, 14, 8));
